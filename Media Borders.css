@@ -1,0 +1,96 @@
+/**
+ * @name Media Borders
+ * @author Tharpadarp
+ * @description Makes different discord media types have colored borders
+ * @version 1.1.7
+ * @invite qYHC98X
+ */
+/* Media Borders */
+
+/*Media Border Resizing And Clipping Fixes*/
+[class^="oneByOneGrid"] {     /*Fix Border Clipping*/
+    max-height: 650px;
+}
+video[class^="video"]:not([class^="videoControls"]) , [class*="clickableWrapper"] {      /*Overlay Border Around Images Instead Of On Top*/
+  box-sizing: border-box !important;
+  padding: 2px;
+}
+[class*="message"] [class*="container"] , [class^="visualMediaItemContainer"] , [class^="oneBy"] , 
+[class*="mosaicItem"] , [class*="message"] [class^="wrapper"] , [class^="imageWrapper"] , [class*="embed"] {     /*Media Has Squared Corners*/
+  border-radius: 0px;
+}
+[class*="embedImage"] , [class*="embedThumbnail"] , [class*="embedVideo"] {     /*Embed Media Has Square Corners*/
+  border-radius: 0px !important;
+}
+[class*="iconWrapper"] , [class^="embedVideoActions"] * {      /*Fix Player Buttons*/
+  border-radius: 24px !important;
+}
+[class^=invite] * {     /*Fixes Pink Border Around Invite Game Logo*/
+  border: none;
+}
+[class^="gridContainer"] [class^="imageWrapper"] {      /*Fix Link-Grid Attachment Clipping Caused By Aspect Ratio (e.g. Medal.tv embed links) */
+  aspect-ratio: auto !important;
+}
+[class^="videoControls"] {      /*Fix Video Controls Being Off Center*/
+  padding-bottom: 13px;
+}
+[class^="spoilerWarning"] {     /*Fix Border Radius Being Squared For Spoiler Warning*/
+  border-radius: 20px !important;
+}
+[class^="reaction"] , [class*="reactionMe"] {     /*Fix Border Radius For Reactions*/
+  border-radius: .5rem !important;
+}
+[class="controlIcon_ef18ee controlIcon_f72aac"] {     /*Fix Off Center Video Zoom*/
+  padding: 0px;
+}
+
+/*PICTURES*/
+[class*=lazyImgContainer] > [class*=originalLink] , [class*="embedImage"] [class*="originalLink"]:not([href*=".gif"]) {
+  border: solid 2px rgb(0, 255, 21);
+  border-radius: 0px !important;
+}
+
+/*VIDEOS*/
+video[class^="video"] {     /*Watched Videos Are Yellow*/
+  border: solid 2px #ffe600;
+  border-radius: 0px;
+  padding: 0px !important;
+}
+[class^="carouselModal"] [class^="video"] {     /*No Border When Viewing Mosaic Videos*/
+  border: none;
+}
+[class^="cover"] {      /*Default Video Color*/
+  border: solid 2px #ff00f2 !important;
+}
+
+/*GIF*/
+[class*=originalLink] {
+  border: solid rgb(0, 162, 255);
+  border-radius: 0px;
+  
+}
+
+
+
+/*Reactions*/
+[class*=reactionInner] {      /*Change Default Reaction Look*/
+  background-color: rgb(15, 33, 37);
+  border: dashed 1px rgb(0, 204, 255);
+  border-radius: 8px
+}
+[class*=reactionInner]:hover {      /*Change Default Reaction Look On Hover*/
+  box-shadow: 0 0 6px 0px rgb(0, 204, 255);
+}
+[class*=reactionMe] > [class*=reactionInner] {      /*Change Reaction Style When Reacted By User*/
+  background-color: rgb(48, 97, 110);
+  border: solid 1px rgb(0, 204, 255);
+  box-shadow: 0 0 6px 0px rgb(0, 204, 255);
+}
+
+/*Link Borders*/
+[class*="embedFull"] {      /*Make Left-Line Border A Full Border*/
+  border: 2px solid;
+}
+[class*="embedFull"]  [class*=originalLink] {     /*Remove Media Border Inside*/
+  border: none !important;
+}
