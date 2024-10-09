@@ -21,3 +21,8 @@ Link embed border color changes depending on link, in this case it's Youtube, so
 ![image](https://github.com/user-attachments/assets/d409ba63-3ee0-44c7-b5dd-93de7defba33)
 
 
+For online themes:
+
+```CSS
+https://raw.githubusercontent.com/JustTharpy/Media-Borders/refs/heads/main/Media%20Borders.css
+```
