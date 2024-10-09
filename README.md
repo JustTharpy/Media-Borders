@@ -1,6 +1,7 @@
 # Media-Borders
 Gives Discord media colored borders based on type.
 --------------------------------------------------------------------------------------------------------
+
 # Previews
 **PINK** | Video:
 ![image](https://github.com/user-attachments/assets/7cdcca00-d4f5-49a4-acb3-ad5ca17bde1a)
