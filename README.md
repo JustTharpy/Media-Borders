@@ -1,5 +1,6 @@
 # Media-Borders
 Gives Discord media colored borders based on type.
+
 --------------------------------------------------------------------------------------------------------
 
 # Previews
@@ -21,8 +22,15 @@ Link embed border color changes depending on link, in this case it's Youtube, so
 ![image](https://github.com/user-attachments/assets/d409ba63-3ee0-44c7-b5dd-93de7defba33)
 
 
-For online themes:
+Online Themes
+-
+**Normal**
 
 ```CSS
 https://raw.githubusercontent.com/JustTharpy/Media-Borders/refs/heads/main/Media%20Borders.css
+```
+
+**Thin**
+```CSS
+https://raw.githubusercontent.com/JustTharpy/Media-Borders/refs/heads/main/Media%20Borders%20-%20Thin.css
 ```
