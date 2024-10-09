@@ -2,7 +2,7 @@
  * @name Media Borders
  * @author Tharpadarp
  * @description Makes different discord media types have colored borders
- * @version 1.1.7
+ * @version 1.1.8
  * @invite qYHC98X
  */
 /* Media Borders */
@@ -65,12 +65,17 @@ video[class^="video"] {     /*Watched Videos Are Yellow*/
 
 /*GIF*/
 [class*=originalLink] {
-  border: solid rgb(0, 162, 255);
+  border: solid 2px rgb(0, 162, 255);
   border-radius: 0px;
-  
 }
 
-
+/*Link Borders*/
+[class*="embedFull"] {      /*Make Left-Line Border A Full Border*/
+  border: 2px solid;
+}
+[class*="embedFull"]  [class*=originalLink] {     /*Remove Media Border Inside*/
+  border: none !important;
+}
 
 /*Reactions*/
 [class*=reactionInner] {      /*Change Default Reaction Look*/
@@ -85,12 +90,4 @@ video[class^="video"] {     /*Watched Videos Are Yellow*/
   background-color: rgb(48, 97, 110);
   border: solid 1px rgb(0, 204, 255);
   box-shadow: 0 0 6px 0px rgb(0, 204, 255);
-}
-
-/*Link Borders*/
-[class*="embedFull"] {      /*Make Left-Line Border A Full Border*/
-  border: 2px solid;
-}
-[class*="embedFull"]  [class*=originalLink] {     /*Remove Media Border Inside*/
-  border: none !important;
 }
